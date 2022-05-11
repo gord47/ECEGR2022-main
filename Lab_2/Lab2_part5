@@ -19,7 +19,7 @@ main:
 	sw t1, A, s0 #store return value in A (t1 stores the x value in the addItUp function)
 	
 	lw t1, 0(sp) #set t1 back to j
-	add a0, zero, t1 #set a0 to j (10)
+	add a0, zero, t1 #set a0 to j
 	jal addItUp #call addItUp for j
 	sw t1, B, s0 #store return value to B
 	

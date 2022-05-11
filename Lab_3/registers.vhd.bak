@@ -167,7 +167,7 @@ begin
 			not datain_b when others;
 	adder0: fulladder port map(datain_a(0), tempB(0), c(0), dataout(0), c(1));
 	generateAdd: for i in 31 downto 1 generate
-	adderi: fulladder port map(datain_a(i), tempB(i), c(i), dataout(i), c(i+1));
+	adderi: fulladder portmap(datain_a(i), tempB(i), c(i), dataout(i), c(i+1));
 	end generate;
 end architecture calc;
 
