@@ -1,0 +1,155 @@
+# Compile of Memory.vhd failed with 1 errors.
+# Compile of tMemory.vhd was successful.
+# Compile of registers.vhd was successful with warnings.
+# 3 compiles, 1 failed with 1 error.
+# Compile of Memory.vhd failed with 22 errors.
+# Compile of tMemory.vhd was successful.
+# Compile of registers.vhd was successful with warnings.
+# 3 compiles, 1 failed with 22 errors.
+# Compile of Memory.vhd was successful.
+# Compile of tMemory.vhd was successful.
+# Compile of registers.vhd was successful with warnings.
+# 3 compiles, 0 failed with no errors.
+vsim work.tmemory_vhd
+# vsim work.tmemory_vhd 
+# Start time: 14:16:50 on Jun 01,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tmemory_vhd(behavior)
+# Loading work.ram(staticram)
+# Loading work.registers(remember)
+# Loading work.register32(biggermem)
+# Loading work.register8(memmy)
+# Loading work.bitstorage(memlike)
+add wave -position insertpoint  \
+sim:/tmemory_vhd/clock \
+sim:/tmemory_vhd/reset \
+sim:/tmemory_vhd/oe \
+sim:/tmemory_vhd/we \
+sim:/tmemory_vhd/readReg1 \
+sim:/tmemory_vhd/readReg2 \
+sim:/tmemory_vhd/writeReg \
+sim:/tmemory_vhd/writeCmd \
+sim:/tmemory_vhd/address \
+sim:/tmemory_vhd/dataIn \
+sim:/tmemory_vhd/dataOut \
+sim:/tmemory_vhd/dataOut1 \
+sim:/tmemory_vhd/dataOut2
+quit -sim
+# End time: 14:17:30 on Jun 01,2022, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 10
+vsim work.tmemory_vhd
+# vsim work.tmemory_vhd 
+# Start time: 14:17:39 on Jun 01,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tmemory_vhd(behavior)
+# Loading work.ram(staticram)
+# Loading work.registers(remember)
+# Loading work.register32(biggermem)
+# Loading work.register8(memmy)
+# Loading work.bitstorage(memlike)
+add wave -position insertpoint  \
+sim:/tmemory_vhd/clock \
+sim:/tmemory_vhd/reset \
+sim:/tmemory_vhd/oe \
+sim:/tmemory_vhd/we \
+sim:/tmemory_vhd/readReg1 \
+sim:/tmemory_vhd/readReg2 \
+sim:/tmemory_vhd/writeReg \
+sim:/tmemory_vhd/writeCmd \
+sim:/tmemory_vhd/address \
+sim:/tmemory_vhd/dataIn \
+sim:/tmemory_vhd/dataOut \
+sim:/tmemory_vhd/dataOut1 \
+sim:/tmemory_vhd/dataOut2
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut1
+run
+run
+run
+run
+run
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ns  Iteration: 1  Instance: /tmemory_vhd/uut1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ns  Iteration: 1  Instance: /tmemory_vhd/uut1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 105 ns  Iteration: 1  Instance: /tmemory_vhd/uut1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 105 ns  Iteration: 1  Instance: /tmemory_vhd/uut1
+# Compile of Memory.vhd was successful.
+# Compile of tMemory.vhd was successful.
+# Compile of registers.vhd was successful with warnings.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tmemory_vhd(behavior)
+# Loading work.ram(staticram)
+# Loading work.registers(remember)
+# Loading work.register32(biggermem)
+# Loading work.register8(memmy)
+# Loading work.bitstorage(memlike)
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tmemory_vhd/uut1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ns  Iteration: 1  Instance: /tmemory_vhd/uut1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ns  Iteration: 1  Instance: /tmemory_vhd/uut1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 105 ns  Iteration: 1  Instance: /tmemory_vhd/uut1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 105 ns  Iteration: 1  Instance: /tmemory_vhd/uut1
+run
+run
+run

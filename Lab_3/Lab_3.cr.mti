@@ -1,4 +1,4 @@
-C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/tregisterswclues.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\gauma\ECEGR2220\ECEGR2022-main\Lab_3\tregisterswclues.vhd}
+C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/tregisterswclues.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/tregisterswclues.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -8,5 +8,62 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity testreg_vhd
 -- Compiling architecture behavior of testreg_vhd
+
+} {} {}} {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_4/ALU.vhd} {2 {vcom -work work -2002 -explicit -stats=none {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_4/ALU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALU
+-- Compiling architecture ALU_Arch of ALU
+-- Compiling entity bitstorage
+-- Compiling architecture memlike of bitstorage
+-- Compiling entity fulladder
+-- Compiling architecture addlike of fulladder
+-- Compiling entity register8
+-- Compiling architecture memmy of register8
+-- Compiling entity register32
+-- Compiling architecture biggermem of register32
+-- Compiling entity adder_subtracter
+-- Compiling architecture calc of adder_subtracter
+-- Compiling entity shift_register
+-- Compiling architecture shifter of shift_register
+** Warning: C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_4/ALU.vhd(249): (vcom-1014) Array type selected signal assignment expression must be of a locally static subtype.
+
+} {} {}} C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/registers.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/registers.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity bitstorage
+-- Compiling architecture memlike of bitstorage
+-- Compiling entity fulladder
+-- Compiling architecture addlike of fulladder
+-- Compiling entity register8
+-- Compiling architecture memmy of register8
+-- Compiling entity register32
+-- Compiling architecture biggermem of register32
+-- Compiling entity adder_subtracter
+-- Compiling architecture calc of adder_subtracter
+-- Compiling entity shift_register
+-- Compiling architecture shifter of shift_register
+** Warning: C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/registers.vhd(191): (vcom-1014) Array type selected signal assignment expression must be of a locally static subtype.
+
+} {} {}} {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_4/tALU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_4/tALU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity testALU_vhd
+-- Compiling architecture behavior of testALU_vhd
 
 } {} {}}

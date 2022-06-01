@@ -1,7 +1,65 @@
 --------------------------------------------------------------------------------
 --
--- LAB #3
+-- LAB #4
 --
+--------------------------------------------------------------------------------
+
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.numeric_std.all;
+Use ieee.std_logic_unsigned.all;
+
+entity ALU is
+	Port(	DataIn1: in std_logic_vector(31 downto 0);
+		DataIn2: in std_logic_vector(31 downto 0);
+		ALUCtrl: in std_logic_vector(4 downto 0);
+		Zero: out std_logic;
+		ALUResult: out std_logic_vector(31 downto 0) );
+end entity ALU;
+
+architecture ALU_Arch of ALU is
+	-- ALU components	
+	component adder_subtracter
+		port(	datain_a: in std_logic_vector(31 downto 0);
+			datain_b: in std_logic_vector(31 downto 0);
+			add_sub: in std_logic;
+			dataout: out std_logic_vector(31 downto 0);
+			co: out std_logic);
+	end component adder_subtracter;
+
+	component shift_register
+		port(	datain: in std_logic_vector(31 downto 0);
+		   	dir: in std_logic;
+			shamt:	in std_logic_vector(4 downto 0);
+			dataout: out std_logic_vector(31 downto 0));
+	end component shift_register;
+	
+	signal add_sub_out: std_logic_vector(31 downto 0);
+	signal shift_out: std_logic_vector(31 downto 0);
+	signal and_out: std_logic_vector(31 downto 0);
+	signal or_out: std_logic_vector(31 downto 0);
+	signal fin_out: std_logic_vector(31 downto 0);
+	signal co: std_logic;
+
+begin
+	-- Add ALU VHDL implementation here
+	adderSub: adder_subtracter PORT MAP(DataIn1, DataIn2, ALUCtrl(2), add_sub_out, co);
+	shifter: shift_register PORT MAP(DataIn1, ALUCtrl(2), DataIn2(4 downto 0), shift_out);
+	and_out <= DataIn1(31 downto 0) and DataIn2(31 downto 0);
+	or_out <= DataIn1(31 downto 0) or DataIn2(31 downto 0);
+
+	fin_out <= add_sub_out when ALUCtrl(3 downto 0) = "0010" or ALUCtrl(3 downto 0) = "0110" ELSE
+			shift_out when ALUCtrl(3 downto 0) = "0100" or ALUCtrl(3 downto 0) = "1100" ELSE
+			and_out when ALUCtrl(3 downto 0)  = "0000" ELSE
+			or_out when ALUCtrl(3 downto 0) = "0001" ELSE
+			DataIn2 when ALUCtrl(3 downto 0) = "1111";
+	ALUResult <= fin_out;
+	with fin_out select
+		Zero <= '1' when x"00000000",
+			'0' when others;
+end architecture ALU_Arch;
+
+
 --------------------------------------------------------------------------------
 
 Library ieee;
@@ -197,6 +255,4 @@ begin
 			"000" & datain(31 downto 3) when "111",
 			datain when others;
 end architecture shifter;
-
-
 

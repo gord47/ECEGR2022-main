@@ -1,0 +1,434 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3
+Eadder_subtracter
+Z0 w1653521024
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+Z6 dC:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5
+Z7 8C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/registers.vhd
+Z8 FC:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/registers.vhd
+l0
+L141 1
+V5P_CednBA>>;JXO7?1H>V1
+!s100 o2fL7W^A1CPLNBXK6Nm0d1
+Z9 OV;C;2020.1;71
+32
+Z10 !s110 1654118725
+!i10b 1
+Z11 !s108 1654118725.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/registers.vhd|
+Z13 !s107 C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/registers.vhd|
+!i113 1
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Acalc
+R1
+R2
+R3
+R4
+R5
+Z16 DEx4 work 16 adder_subtracter 0 22 5P_CednBA>>;JXO7?1H>V1
+!i122 11
+l160
+Z17 L149 24
+Z18 VJ=A>V0D8=7<6eGD5`DS=41
+Z19 !s100 Rlad@fiiPA6YRQF>>kH@R0
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ebitstorage
+R0
+R1
+R2
+R3
+R4
+R5
+!i122 11
+R6
+R7
+R8
+l0
+L12 1
+VdCGWj`@VbHgV172Jg^EQX1
+!s100 WJnIlGlmDL72kEaZWY7LI2
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Amemlike
+R1
+R2
+R3
+R4
+R5
+Z20 DEx4 work 10 bitstorage 0 22 dCGWj`@VbHgV172Jg^EQX1
+!i122 11
+l21
+Z21 L19 13
+Z22 V<KY=mN>W^6@>cW`V]6Y^Y2
+Z23 !s100 >C<lEnBjkno6BlaBg7zNz3
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Efulladder
+R0
+R1
+R2
+R3
+R4
+R5
+!i122 11
+R6
+R7
+R8
+l0
+L39 1
+V=FPW_d1N0HAmBXP_4FHUj0
+!s100 MPWGQOD3M^:9b24Oc4LP:1
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Aaddlike
+R1
+R2
+R3
+R4
+R5
+Z24 DEx4 work 9 fulladder 0 22 =FPW_d1N0HAmBXP_4FHUj0
+!i122 11
+l49
+Z25 L48 5
+Z26 VYAZhA1hLlNW^KgldE^3f01
+Z27 !s100 <Eni[?PWcgZ?5R]=[zAgg3
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Eram
+Z28 w1654118689
+R1
+R2
+R3
+R4
+R5
+!i122 9
+R6
+Z29 8C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5/Memory.vhd
+Z30 FC:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5/Memory.vhd
+l0
+Z31 L11 1
+VNc@NT[?`T^`5=oR;nc;z_2
+!s100 :B:Ji:295CNahda9_8<OC1
+R9
+32
+R10
+!i10b 1
+R11
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5/Memory.vhd|
+Z33 !s107 C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5/Memory.vhd|
+!i113 1
+R14
+R15
+Astaticram
+R1
+R2
+R3
+R4
+R5
+DEx4 work 3 ram 0 22 Nc@NT[?`T^`5=oR;nc;z_2
+!i122 9
+l26
+L21 41
+Va;X3e=9IV<k2n?;H5n0Gi1
+!s100 ]V2M>>:dCk^dP;ljFa]C21
+R9
+32
+R10
+!i10b 1
+R11
+R32
+R33
+!i113 1
+R14
+R15
+Eregister32
+R0
+R1
+R2
+R3
+R4
+R5
+!i122 11
+R6
+R7
+R8
+l0
+L93 1
+V;_P@`^0ozhKbnlYO><=_?2
+!s100 9iQJ<GY^<k:U6EQjm59Q=0
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Abiggermem
+R1
+R2
+R3
+R4
+R5
+Z34 DEx4 work 10 register32 0 22 ;_P@`^0ozhKbnlYO><=_?2
+!i122 11
+l114
+Z35 L100 34
+Z36 VzQg<o0Z[;<1c_:=j3;P[M1
+Z37 !s100 ?<2DJL8g^8h?bZCTRzb::3
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Eregister8
+R0
+R1
+R2
+R3
+R4
+R5
+!i122 11
+R6
+R7
+R8
+l0
+L61 1
+VCmLjgjT4F;9OEK[DbRco72
+!s100 DGz4Yz>el_lHHIC:Ik3m10
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Amemmy
+R1
+R2
+R3
+R4
+R5
+Z38 DEx4 work 9 register8 0 22 CmLjgjT4F;9OEK[DbRco72
+!i122 11
+l75
+Z39 L68 18
+Z40 VUFbnl0ZQ8a@UJ1z3;VkFd3
+Z41 !s100 3>ZHd7CWaWlkBkJT51JXA2
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Eregisters
+R28
+R1
+R2
+R3
+R4
+R5
+!i122 9
+R6
+R29
+R30
+l0
+L70 1
+V_Tl652V:=kzllInWT8gBJ2
+!s100 Oz76z]Lb4_X=5YR39LAah3
+R9
+32
+R10
+!i10b 1
+R11
+R32
+R33
+!i113 1
+R14
+R15
+Aremember
+R1
+R2
+R3
+R4
+R5
+DEx4 work 9 registers 0 22 _Tl652V:=kzllInWT8gBJ2
+!i122 9
+l90
+L80 53
+V_`noc6]QKKFOVlMKF5:YB3
+!s100 <S^>:l35S:67DQ_9@46oH2
+R9
+32
+R10
+!i10b 1
+R11
+R32
+R33
+!i113 1
+R14
+R15
+Eshift_register
+R0
+R1
+R2
+R3
+R4
+R5
+!i122 11
+R6
+R7
+R8
+l0
+L180 1
+V<hKQN<:C1HVdclUSDUE5`1
+!s100 KTLk=<H8i<Si^zB:o2[b81
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ashifter
+R1
+R2
+R3
+R4
+R5
+Z42 DEx4 work 14 shift_register 0 22 <hKQN<:C1HVdclUSDUE5`1
+!i122 11
+l189
+Z43 L187 13
+Z44 VKk]56IG>If^3[Voc<2^@z3
+Z45 !s100 Nn:SJKmPEicoc1XMOiHYE3
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Etmemory_vhd
+Z46 w1652039781
+R1
+R2
+R3
+R4
+R5
+!i122 10
+R6
+Z47 8C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5/tMemory.vhd
+Z48 FC:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5/tMemory.vhd
+l0
+R31
+Vif5Y=^]Ec:KR3FkV4F[JZ3
+!s100 To_T8cL8kc>aMze>51Jo]3
+R9
+32
+R10
+!i10b 1
+R11
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5/tMemory.vhd|
+Z50 !s107 C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5/tMemory.vhd|
+!i113 1
+R14
+R15
+Abehavior
+R1
+R2
+R3
+R4
+R5
+DEx4 work 11 tmemory_vhd 0 22 if5Y=^]Ec:KR3FkV4F[JZ3
+!i122 10
+l55
+L14 259
+VGTARgnQ^>O9cE^H1z4C[D0
+!s100 fo?F7GmY3iS^?45C:`k9[3
+R9
+32
+R10
+!i10b 1
+R11
+R49
+R50
+!i113 1
+R14
+R15
