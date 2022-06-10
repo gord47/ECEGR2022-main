@@ -43,44 +43,47 @@ entity Control is
 end Control;
 
 architecture Boss of Control is
-signal intermediate: std_logic_vector(4 downto 0);
+signal intermediateALUCtrl: std_logic_vector(4 downto 0);
 begin
 -- Add your code here
 	--need intermediate signal to access 4th bit later on
-	intermediate <= "00010" when opcode = "0110011" and funct3 = "000" and funct7 = "0000000" else --ADD
-			"00110" when opcode = "0110011" and funct3 = "000" and funct7 = "0100000" else --SUB
-			"00001" when opcode = "0110011" and funct3 = "110" and funct7 = "0000000" else --OR
-			"00000" when opcode = "0110011" and funct3 = "111" and funct7 = "0000000" else --AND
-			"00011" when opcode = "0110011" and funct3 = "001" and funct7 = "0000000" else --SLL
-			"00100" when opcode = "0110011" and funct3 = "101" and funct7 = "0000000" else --SRL
-			"10010" when opcode = "0010011" and funct3 = "000" else --ADDI
-			"10001" when opcode = "0010011" and funct3 = "110" else --ORI
-			"10000" when opcode = "0010011" and funct3 = "111" else --ANDI
-			"10011" when opcode = "0010011" and funct3 = "001" else --SLLI
-			"10100" when opcode = "0010011" and funct3 = "101" else --SRLI
-			"00110" when opcode = "1100011" and (funct3 = "000" or funct3 = "001") else --BEQ/BNE
-			"10010" when opcode = "0000011" or opcode = "0100011"  else --LW/SW
-			"11111" when opcode = "0110111" else --LUI
-			"01111"; --Pass through
-	ALUCtrl <= intermediate;
+	intermediateALUCtrl <= "00010" WHEN opcode = "0110011" AND funct3 = "000" AND funct7 = "0000000" ELSE	--ADD
+		"00110" WHEN opcode = "0110011" AND funct3 = "000" AND funct7 = "0100000" ELSE		--SUB
+		"00001" WHEN opcode = "0110011" AND funct3 = "110" AND funct7 = "0000000" ELSE		--OR
+		"00000" WHEN opcode = "0110011" AND funct3 = "111" AND funct7 = "0000000" ELSE		--AND
+		"00011" WHEN opcode = "0110011" AND funct3 = "001" AND funct7 = "0000000" ELSE		--SLL
+		"00100" WHEN opcode = "0110011" AND funct3 = "101" AND funct7 = "0000000" ELSE		--SRL
+		"10010"	WHEN opcode = "0010011" AND funct3 = "000" ELSE					--ADDI 
+		"10001" WHEN opcode = "0010011" AND funct3 = "110" ELSE					--ORI
+		"10000" WHEN opcode = "0010011" AND funct3 = "111" ELSE					--ANDI
+		"10011" WHEN opcode = "0010011" AND funct3 = "001" ELSE					--SLLI
+		"10100" WHEN opcode = "0010011" AND funct3 = "101" ELSE					--SRLI
+		"00110" WHEN opcode = "1100011" AND (funct3 = "000" OR funct3 = "001") ELSE		--BEQ or BNE	(Subraction allows to compare equality or lack therefore)
+		"10010" WHEN opcode = "0000011" OR opcode = "0100011" ELSE				--LW/SW		(Addition calculates effective address for getting data)
+		"11111" WHEN opcode = "0110111" ELSE							--LUI
+		"01111";										--Pass Through otherwise
+	ALUCtrl <= intermediateALUCtrl;
 
-	ImmGen <= "00" when opcode = "0010011" or opcode = "0000011" else --I-type immediate generator
-		"01" when opcode = "0100011" else --S-type
-		"10" when opcode = "1100011" else -- B-type
-		"11"; --No immGen for R or U type
-	Branch <= "10" when funct3 = "000" and funct7 = "1100011" else --BEQ
-		"01" when funct3 = "001" and funct7 = "1100011" else --BNE
-		"00";
-	MemRead <= '0' when opcode = "0000011" else
-		'1';
-	MemtoReg <= '1' when opcode = "0000011" else
-		'0';
-	MemWrite <= '1' when opcode = "0100011" else
-		'0';
-	RegWrite <= '1' when (opcode = "0110111" or opcode = "0000011" or opcode = "0010011" or opcode = "0110011") and clk = '0' else
-		'0';
-	ALUSrc <= '0' when opcode = "011011" or opcode = "1100011" or opcode = "XXXXXXX"else
-		'1'; 
+	Branch <= "01" WHEN opcode = "1100011" AND funct3 = "000" ELSE		--BEQ
+		  "10" WHEN opcode = "1100011" AND funct3 = "001" ELSE		--BNE
+		  "00";								--No Branch
+
+	ALUSrc <= '0' WHEN intermediateALUCtrl(4) = '0' ELSE
+		  '1';
+	ImmGen <= "00" WHEN opcode = "0010011" OR opcode = "0000011" ELSE	--Immediate generation for I-types / LW
+		  "01" WHEN opcode = "0100011" ELSE				--ImmGen for S-type
+		  "10" WHEN opcode = "1100011" ELSE				--ImmGen for B-type
+		  "11";								--No ImmGen for R-type or U-type
+
+	RegWrite <= '1' WHEN (opcode = "0110111" OR opcode = "0000011" OR opcode = "0010011" OR opcode = "0110011") AND clk = '0' ELSE
+		    '0';
+
+	MemWrite <= '1' WHEN opcode = "0100011" ELSE
+		    '0';
+	MemRead <= '0' WHEN opcode = "0000011" ELSE
+		   '1';
+	MemToReg <= '1' WHEN opcode = "0000011" ELSE
+		    '0';
 	
 end Boss;
 

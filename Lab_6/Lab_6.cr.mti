@@ -1,0 +1,82 @@
+{C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_6/ProcElements.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_6/ProcElements.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity BusMux2to1
+-- Compiling architecture selection of BusMux2to1
+-- Compiling entity Control
+-- Compiling architecture Boss of Control
+-- Compiling entity ProgramCounter
+-- Compiling architecture executive of ProgramCounter
+
+} {} {}} {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_6/InstrMemory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_6/InstrMemory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity InstructionRAM
+-- Compiling architecture instrucRAM of InstructionRAM
+
+} {} {}} {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_6/Processor.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_6/Processor.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Processor
+-- Compiling architecture holistic of Processor
+
+} {} {}} {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_6/tProcessor.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_6/tProcessor.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity tProcessor_vhd
+-- Compiling architecture behavior of tProcessor_vhd
+
+} {} {}} {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5/Memory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/gauma/ECEGR2220/ECEGR2022-main (3)/ECEGR2022-main/Lab_5/Memory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity RAM
+-- Compiling architecture staticRAM of RAM
+-- Compiling entity Registers
+-- Compiling architecture remember of Registers
+
+} {} {}} C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/registers.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/registers.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity bitstorage
+-- Compiling architecture memlike of bitstorage
+-- Compiling entity fulladder
+-- Compiling architecture addlike of fulladder
+-- Compiling entity register8
+-- Compiling architecture memmy of register8
+-- Compiling entity register32
+-- Compiling architecture biggermem of register32
+-- Compiling entity adder_subtracter
+-- Compiling architecture calc of adder_subtracter
+-- Compiling entity shift_register
+-- Compiling architecture shifter of shift_register
+** Warning: C:/Users/gauma/ECEGR2220/ECEGR2022-main/Lab_3/registers.vhd(191): (vcom-1014) Array type selected signal assignment expression must be of a locally static subtype.
+
+} {} {}}
